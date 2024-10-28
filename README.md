@@ -1,5 +1,7 @@
 ## Here is the streamlit deployed app link- https://pdfansweringaig-dkxmcxj4zgzk9hipeo6vkx.streamlit.app/
+
 Please Follow instruction.txt for make model to work.
+
 # Chat with Multiple PDFs
 
 This project is a Streamlit-based application that allows users to chat with multiple PDF documents. It uses FAISS for efficient document retrieval and a T5 model for generating responses. The PDF documents are processed, and the text is split into manageable chunks, vectorized, and stored in a FAISS index. Users can then ask questions, and the system retrieves relevant document sections to generate responses.
@@ -19,46 +21,48 @@ This project is a Streamlit-based application that allows users to chat with mul
 
 - Python 3.7 or higher
 
- Required Python packages (see `requirements.txt`)
+Required Python packages (see `requirements.txt`)
 
 ## Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/Deepak42-y/PDF_ANSWERING_AI.git
-    cd yourrepository
-    ```
+
+   ```bash
+   git clone https://github.com/Deepak42-y/PDF_ANSWERING_AI.git
+   cd yourrepository
+   ```
 
 2. Create a virtual environment and activate it:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
 3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. Download the LaMini-T5-738M model and place it in your project directory:
-    - Place the model files in a directory, e.g., `models/LaMini-T5-738M`
+   - Place the model files in a directory, e.g., `models/LaMini-T5-738M`
 
 ## Usage
 
 1. Run the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
+
+   ```bash
+   streamlit run app.py
+   ```
 
 2. Open your web browser
-![Screenshot 2024-06-19 154804](https://github.com/Deepak42-y/PDF_ANSWERING_AI/assets/98938557/1554eb86-a0c0-4257-ab7b-0a19305c76ab)
+   ![Screenshot 2024-06-19 154804](https://github.com/Deepak42-y/PDF_ANSWERING_AI/assets/98938557/1554eb86-a0c0-4257-ab7b-0a19305c76ab)
 
-
-4. Upload your PDF files using the sidebar, click "Process", and wait for processing to complete.
+3. Upload your PDF files using the sidebar, click "Process", and wait for processing to complete.
    ![Screenshot 2024-06-19 155103](https://github.com/Deepak42-y/PDF_ANSWERING_AI/assets/98938557/5f9f4ce0-2835-4bcb-9e04-5d79bb958b53)
 
-
-6. Ask questions about the uploaded documents in the main chat interface.
+4. Ask questions about the uploaded documents in the main chat interface.
    Note: Please Download "MBZUAI/LaMini-T5-738M" model from hugging face at your folder location using code from trial.ipynb
 
 ## File Structure
@@ -84,7 +88,6 @@ This project is a Streamlit-based application that allows users to chat with mul
 - **CSS and HTML Templates**: Contains the styles and structure for the chat interface, including user and bot message templates and the PDF preview window.
 - **render_pdf**: Function to render PDF files in an iframe for preview.
 
-
 ## Acknowledgements
 
 - [Streamlit](https://streamlit.io/)
@@ -92,8 +95,4 @@ This project is a Streamlit-based application that allows users to chat with mul
 - [FAISS](https://faiss.ai/)
 - [Hugging Face](https://huggingface.co/)
 
-
 https://github.com/Deepak42-y/PDF_ANSWERING_AI/assets/98938557/eb40692d-dc21-4e5b-a7ad-0aa178025de5
-
-
-  
