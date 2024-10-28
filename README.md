@@ -28,7 +28,7 @@ Required Python packages (see `requirements.txt`)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Deepak42-y/PDF_ANSWERING_AI.git
+   git clone https://github.com/Deepak-gautam1/QueryPDF.git
    cd yourrepository
    ```
 
